@@ -1,0 +1,118 @@
+<!DOCTYPE html/>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+
+  <h1>Calculator</h1>
+
+  <div>
+      <input id="input-window" type="text"></text>
+      <!-- TODO are any of these special characters? -->
+      <!-- TODO can I use images for the button faces instead of unicode characters? -->
+      <div><button onclick="myFunctionAC()">AC</button><button>+/-</button><button onclick="myFunctionPercent()">%</button><button onclick="myFunctionDivide()">&#247;</button></div>
+        <div><button onclick ="myFunctionSeven()">7</button><button onclick = "myFunctionEight()">8</button>
+        <button onclick="myFunctionNine()">9</button><button onclick="myFunctionMultiply()">*</button></div>
+        <div><button onclick ="myFunctionFour()">4</button><button onclick="myFunctionFive()" >5</button>
+        <button onclick="myFunctionSix()">6</button><button onclick="myFunctionMinus()">-</button></div>
+        <div><button onclick="myFunctionOne()"
+        >1</button><button onclick="myFunctionTwo()">2</button>
+        <button onclick="myFunctionThree()">3</button><button onclick="myFunctionPlus()">+</button></div>
+        <div><button onclick="myFunctionZero()">0</button><button onclick="myFunctionDecimal()">.</button><button>=</button></div>
+    </div>
+<script type="text/javascript" src="script.js"></script>
+  </div>
+  <script>
+  //1 button
+function myFunctionOne() {
+   var temp = 1;
+   document.getElementById("input-window").value = "1";
+}
+//2 button
+function myFunctionTwo(){
+ var temp2 = 2;
+ document.getElementById("input-window").value = "2";
+}
+//three button
+function myFunctionThree(){
+ var temp3 = 3;
+ document.getElementById("input-window").value = "3";
+}
+//four button
+function myFunctionFour(){
+ var temp4 = 4;
+ document.getElementById("input-window").value = "4";
+}
+//Five button
+function myFunctionFive(){
+ var temp5 = 5;
+ document.getElementById("input-window").value = "5";
+}
+//Six button
+function myFunctionSix(){
+ var temp6 = 6;
+ document.getElementById("input-window").value = "6";
+}
+//Seven button
+function myFunctionSeven(){
+ var temp7 = 7;
+ document.getElementById("input-window").value = "7";
+}
+//Eight button
+function myFunctionEight(){
+ var temp8 = 8;
+ document.getElementById("input-window").value = "8";
+}
+//Nine button
+function myFunctionNine(){
+ var temp9 = 9;
+ document.getElementById("input-window").value = "9";
+}
+//Zero button
+function myFunctionZero(){
+ var temp0 = 0;
+ document.getElementById("input-window").value = "0";
+}
+//Function for adding
+function myFunctionPlus(){
+  var tempPlus = "+";
+  document.getElementById("input-window").value = "+";
+}
+//Function for subtraction
+function myFunctionMinus(){
+  var tempMinus = "-";
+  document.getElementById("input-window").value = "-";
+}
+//Function for Division
+function myFunctionDivide(){
+  var tempDivide = "/";
+  document.getElementById("input-window").value = "/"
+}
+//Function for multiplication
+function myFunctionMultiply(){
+  var tempMultiply = "*";
+  document.getElementById("input-window").value = "*"
+}
+//Function for decimal
+function myFunctionDecimal(){
+  var tempDecimal = ".";
+  document.getElementById("input-window").value = "."
+}
+//Function for Percent
+function myFunctionPercent(){
+  var tempPercent = "%";
+  document.getElementById("input-window").value = "%"
+}
+//Function for AC
+function myFunctionAC(){
+  var temp = "";
+  document.getElementById("input-window").value = ""
+}
+
+
+  </script>
+
+</body>
+</html>
